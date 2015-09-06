@@ -16,15 +16,15 @@
 }
 
 -(void) grow {
-    if([self currentColor] == red){
+    if([self currentColor] == appleOfRed){
         NSLog(@"Apple is red");
     }
-    else if([self currentColor] == green){
-        [self setCurrentColor: (AppleColor) yellow];
+    else if([self currentColor] == appleOfGreen){
+        [self setCurrentColor: (AppleColor) appleOfYellow];
         NSLog(@"Apple is yellow");
     }
-    else if([self currentColor] == yellow){
-        [self setCurrentColor: (AppleColor) red];
+    else if([self currentColor] == appleOfYellow){
+        [self setCurrentColor: (AppleColor) appleOfRed];
         NSLog(@"Apple is red");
     }
 }
@@ -33,7 +33,7 @@
     self = [super init];
     if(self)
     {
-        [self setCurrentColor: (AppleColor) green];
+        [self setCurrentColor: (AppleColor) appleOfGreen];
         [self setSeed: seedCount];
         [self setIsHang: true];
         NSLog(@"Apple was created");
