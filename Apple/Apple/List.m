@@ -1,11 +1,3 @@
-//
-//  List.m
-//  lab1
-//
-//  Created by Admin on 03.09.15.
-//  Copyright (c) 2015 Admin. All rights reserved.
-//
-
 #import "List.h"
 
 @implementation List
@@ -23,15 +15,15 @@
 }
 
 -(void) grow {
-    if([self currentColor] == red){
+    if([self currentColor] == listOfRed){
         NSLog(@"List is red");
     }
-    else if([self currentColor] == green){
-        [self setCurrentColor: (ListColor) yellow];
+    else if([self currentColor] == listOfGreen){
+        [self setCurrentColor: (ListColor) listOfYellow];
         NSLog(@"List is yellow");
     }
-    else if([self currentColor] == yellow){
-        [self setCurrentColor: (ListColor) red];
+    else if([self currentColor] == listOfYellow){
+        [self setCurrentColor: (ListColor) listOfRed];
         NSLog(@"List is red");
     }
 }
@@ -39,7 +31,7 @@
     self = [super init];
     if(self)
     {
-        [self setCurrentColor: (ListColor) green];
+        [self setCurrentColor: (ListColor) listOfGreen];
         [self setIsHang: true];
         NSLog(@"List was created");
     }
