@@ -1,11 +1,3 @@
-//
-//  AppleTree.m
-//  lab1
-//
-//  Created by Admin on 03.09.15.
-//  Copyright (c) 2015 Admin. All rights reserved.
-//
-
 #import "AppleTree.h"
 
 @implementation AppleTree
@@ -18,7 +10,7 @@
 {
     return false;
 }
--(bool) dropList: (List *) list
+-(bool) dropList: (Leaf *) list
 {
     return false;
 }
