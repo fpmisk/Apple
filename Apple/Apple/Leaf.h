@@ -1,15 +1,15 @@
 #import <Foundation/Foundation.h>
 
-typedef enum _ListColor
+typedef enum _LeafColor
 {
-    listOfRed,
-    listOfGreen,
-    listOfYellow
-}ListColor;
+    leafOfRed,
+    leafOfGreen,
+    leafOfYellow
+}LeafColor;
 
-@interface List : NSObject
+@interface Leaf : NSObject
 
-@property ListColor currentColor;
+@property LeafColor currentColor;
 @property BOOL isHang;
 -(id) init;
 -(BOOL) drop;
