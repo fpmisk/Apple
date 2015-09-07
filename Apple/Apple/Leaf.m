@@ -1,6 +1,6 @@
-#import "List.h"
+#import "Leaf.h"
 
-@implementation List
+@implementation Leaf
 
 @synthesize currentColor = _currentColor;
 @synthesize isHang = _isHang;
@@ -9,31 +9,31 @@
     
     if ([self isHang] == true) {
         [self setIsHang:false];
-        NSLog(@"List drop from tree");
+        NSLog(@"Leaf drop from tree");
     }
     return [self isHang];
 }
 
 -(void) grow {
-    if([self currentColor] == listOfRed){
-        NSLog(@"List is red");
+    if([self currentColor] == leafOfRed){
+        NSLog(@"Leaf is red");
     }
-    else if([self currentColor] == listOfGreen){
-        [self setCurrentColor: (ListColor) listOfYellow];
-        NSLog(@"List is yellow");
+    else if([self currentColor] == leafOfGreen){
+        [self setCurrentColor: (LeafColor) leafOfYellow];
+        NSLog(@"Leaf is yellow");
     }
-    else if([self currentColor] == listOfYellow){
-        [self setCurrentColor: (ListColor) listOfRed];
-        NSLog(@"List is red");
+    else if([self currentColor] == leafOfYellow){
+        [self setCurrentColor: (LeafColor) leafOfRed];
+        NSLog(@"Leaf is red");
     }
 }
 -(id) init{
     self = [super init];
     if(self)
     {
-        [self setCurrentColor: (ListColor) listOfGreen];
+        [self setCurrentColor: (LeafColor) leafOfGreen];
         [self setIsHang: true];
-        NSLog(@"List was created");
+        NSLog(@"Leaf was created");
     }
     return self;
 }

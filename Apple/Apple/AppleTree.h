@@ -2,15 +2,15 @@
 #import <Foundation/Foundation.h>
 #import "Apple.h"
 #import "Leaf.h"
+#import "Tree.h"
 
-@interface AppleTree : NSObject
+@interface AppleTree : NSObject <Tree>
 
-@property NSInteger *age;
+@property NSInteger *countOfApple;
 @property NSMutableArray *arrayOfApple;
-@property NSMutableArray *arrayOfList;
 
 -(bool) dropApple: (Apple *) apple;
--(bool) dropList: (Leaf *) list;
+-(void) addApple: (Apple *) apple;
 -(void) grow;
 -(void) shake;
 -(id) initWithAge: (NSInteger *) age;

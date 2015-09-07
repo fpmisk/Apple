@@ -1,40 +1,19 @@
-#import "Leaf.h"
+#import <Foundation/Foundation.h>
 
-@implementation Leaf
+typedef enum _LeafColor
+{
+    leafOfRed,
+    leafOfGreen,
+    leafOfYellow
+}LeafColor;
 
-@synthesize currentColor = _currentColor;
-@synthesize isHang = _isHang;
+@interface Leaf : NSObject
 
--(BOOL) drop {
-    
-    if ([self isHang] == true) {
-        [self setIsHang:false];
-        NSLog(@"Leaf drop from tree");
-    }
-    return [self isHang];
-}
+@property LeafColor currentColor;
+@property BOOL isHang;
+-(id) init;
+-(BOOL) drop;
+-(void) grow;
 
--(void) grow {
-    if([self currentColor] == leafOfRed){
-        NSLog(@"Leaf is red");
-    }
-    else if([self currentColor] == leafOfGreen){
-        [self setCurrentColor: (LeafColor) leafOfYellow];
-        NSLog(@"Leaf is yellow");
-    }
-    else if([self currentColor] == leafOfYellow){
-        [self setCurrentColor: (LeafColor) leafOfRed];
-        NSLog(@"Leaf is red");
-    }
-}
--(id) init{
-    self = [super init];
-    if(self)
-    {
-        [self setCurrentColor: (LeafColor) leafOfGreen];
-        [self setIsHang: true];
-        NSLog(@"Leaf was created");
-    }
-    return self;
-}
+
 @end
