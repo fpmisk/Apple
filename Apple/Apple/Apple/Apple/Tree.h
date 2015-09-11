@@ -5,8 +5,8 @@
 @protocol Tree <NSObject>
 
 @property NSMutableArray *arrayOfLeaf;
-@property NSInteger *age;
-@property NSInteger *countOfLeaf;
+@property NSNumber *age;
+@property NSNumber *countOfLeaf;
 
 -(bool) dropLeaf: (Leaf *) leaf;
 -(void) addLeaf: (Leaf *) leaf;

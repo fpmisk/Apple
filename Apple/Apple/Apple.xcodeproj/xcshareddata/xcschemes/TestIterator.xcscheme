@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8447DB791B9E2A8900B8E84D"
-               BuildableName = "Apple"
-               BlueprintName = "Apple"
+               BlueprintIdentifier = "84286AE51BA2CB71004D55D3"
+               BuildableName = "TestIterator.xctest"
+               BlueprintName = "TestIterator"
                ReferencedContainer = "container:Apple.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,13 +28,23 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "84286AE51BA2CB71004D55D3"
+               BuildableName = "TestIterator.xctest"
+               BlueprintName = "TestIterator"
+               ReferencedContainer = "container:Apple.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8447DB791B9E2A8900B8E84D"
-            BuildableName = "Apple"
-            BlueprintName = "Apple"
+            BlueprintIdentifier = "84286AE51BA2CB71004D55D3"
+            BuildableName = "TestIterator.xctest"
+            BlueprintName = "TestIterator"
             ReferencedContainer = "container:Apple.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -48,16 +58,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8447DB791B9E2A8900B8E84D"
-            BuildableName = "Apple"
-            BlueprintName = "Apple"
+            BlueprintIdentifier = "84286AE51BA2CB71004D55D3"
+            BuildableName = "TestIterator.xctest"
+            BlueprintName = "TestIterator"
             ReferencedContainer = "container:Apple.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -67,16 +76,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8447DB791B9E2A8900B8E84D"
-            BuildableName = "Apple"
-            BlueprintName = "Apple"
+            BlueprintIdentifier = "84286AE51BA2CB71004D55D3"
+            BuildableName = "TestIterator.xctest"
+            BlueprintName = "TestIterator"
             ReferencedContainer = "container:Apple.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

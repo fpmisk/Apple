@@ -81,7 +81,7 @@
     NSLog(@"AppleTree was shaken");
 
 }
--(id) initWithAge:(NSInteger *)age
+-(id) initWithAge:(NSNumber *)age
 {
     self = [super init];
     if(self)
