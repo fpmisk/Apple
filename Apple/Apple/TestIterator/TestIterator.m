@@ -2,12 +2,14 @@
 //  TestIterator.m
 //  TestIterator
 //
-//  Created by Admin on 11.09.15.
-//  Copyright (c) 2015 Admin. All rights reserved.
+//  Created by fpmi on 17.09.15.
+//  Copyright (c) 2015 fpmi. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import "Apple.h"
+#import "Basket.h"
 
 @interface TestIterator : XCTestCase
 
@@ -27,7 +29,25 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    NSMutableArray * array = [[NSMutableArray alloc] init];
+    
+    int count = 0;
+    for (int i = 0; i < 6; ++i)
+    {
+        Apple * apple = [[Apple alloc] initWithSeedCount:[[NSNumber alloc] initWithInt:4]];
+        [array addObject: apple];
+    }
+    Basket * basket = [[Basket alloc] initWithArray:array];
+    BasketIterator * iterator = [basket iterator];
+    
+    while([iterator hasNext])
+    {
+        [iterator next];
+        ++count;
+    }
+    
+    XCTAssertEqual(count, 6, @"YES");
+       
 }
 
 - (void)testPerformanceExample {
